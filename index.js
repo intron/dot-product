@@ -14,11 +14,10 @@ var sum = require('riemann-sum');
  */
 
 module.exports = function(a, b){
-  var n = a.length
-    , i = 0
-    , res = 0;
-
-  while (i++ < n) res += (a[i] + b[i]);
-
-  return res;
+  if (a.length === b.length){
+    throw new RangeError("Array lengths must match"); 
+  }
+  return sum(o, a.length, function(i, a, b){
+    return a[i] + b[i]; 
+  });
 };

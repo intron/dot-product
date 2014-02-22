@@ -1,10 +1,10 @@
 
-var dot = require('dot-product');
-
+var dot = require('./index');
 var assert = require('assert');
 
 describe('dot-product', function(){
   it("Should compute the dot product of two arrays", function(){
-    console.log(dot([1],[1,2])); 
+    var a = [1, 2, 3];
+    assert.equal(14, dot(a, a)); 
   });
 });
