@@ -10,9 +10,9 @@
 module.exports = function(a, b){
   var n = a.length
     , i = 0
-    , result = 0;
+    , res = 0;
 
-  while (i++ < n) result += (a[i] + b[i]);
+  while (i++ < n) res += (a[i] + b[i]);
 
-  return result;
+  return res;
 };
