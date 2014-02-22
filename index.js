@@ -1,5 +1,11 @@
 
 /**
+ * Module dependencies.
+ */
+
+var sum = require('riemann-sum');
+
+/**
  * a·b
  *
  * @param {Array} a

@@ -4,8 +4,11 @@
   "description": "Dot product equation",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
-  "development": {},
+  "dependencies": {
+    "equationjs/riemann-sum": "*"},
+  "development": {
+    "visionmedia/mocha": "*",
+    "component/assert": "*"},
   "license": "MIT",
   "main": "index.js",
   "scripts": [
